@@ -67,6 +67,10 @@
       gap: 2px;
     }
 
+    .logo-text .brand-title {
+      font-size: 18px;
+    }
+
     .logo .mark {
       width: 36px;
       height: 36px;
@@ -175,9 +179,33 @@
     .cta h3 { font-size: 30px; margin: 0 0 12px; }
     .cta p { color: var(--muted); margin: 0 0 24px; }
 
-    footer { border-top: 1px solid var(--border); padding: 32px 0 48px; margin-top: 72px; color: var(--muted); }
+    footer { border-top: 1px solid var(--border); padding: 32px 0 48px; margin-top: 72px; color: var(--muted); position: relative; overflow: hidden; }
     footer .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
     footer h4 { color: var(--text); margin: 0 0 10px; }
+
+    .footer-brand {
+      position: relative;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(138, 227, 255, 0.08), rgba(110, 125, 255, 0.06));
+      overflow: hidden;
+    }
+
+    .footer-brand::after {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      background: url('./images/hyperalis_labs_workmark_full_cropped.png') center/contain no-repeat;
+      opacity: 0.08;
+      filter: grayscale(1);
+      pointer-events: none;
+    }
+
+    .footer-brand .wordmark {
+      position: relative;
+      margin-bottom: 16px;
+    }
 
     @media (max-width: 720px) {
       .nav { padding: 14px 16px; }
@@ -193,7 +221,7 @@
     <div class="nav">
       <a class="logo" href="#top" aria-label="Hyperalis Labs home">
         <div class="logo-text">
-          <div>Hyperalis Labs</div>
+          <div class="brand-title">Hyperalis Labs</div>
           <small style="color: var(--muted); font-weight: 600;">Generative Earth Intelligence</small>
         </div>
       </a>
@@ -211,9 +239,6 @@
   <main id="top">
     <section class="hero">
       <div>
-        <div class="wordmark">
-          <img src="./images/hyperalis_labs_workmark_full_cropped.png" alt="Hyperalis Labs wordmark" />
-        </div>
         <div class="pill">Generative AI for Earth Observation</div>
         <h1>Understand Our Planet with adaptive EO Signals.</h1>
         <p class="lead">Hyperalis Labs delivers ready-to-use data products that fuse generative models with orbital streams, turning raw pixels into decisions for climate resilience, infrastructure intelligence, and sustainable growth.</p>
@@ -348,14 +373,17 @@
 
   <footer>
     <main class="footer-grid">
-      <div>
-        <div class="logo" style="margin-bottom: 8px;">
+      <div class="footer-brand">
+        <div class="wordmark">
+          <img src="./images/hyperalis_labs_workmark_full_cropped.png" alt="Hyperalis Labs wordmark" />
+        </div>
+        <div class="logo" style="margin-bottom: 8px; position: relative; z-index: 1;">
           <div class="mark">
             <img src="./images/hyperalis_logo.png" alt="Hyperalis Labs logo" />
           </div>
-          <div>Hyperalis Labs</div>
+          <div class="brand-title">Hyperalis Labs</div>
         </div>
-        <div>Generative AI for Earth Observation. Data products and change intelligence for resilient decisions.</div>
+        <div style="position: relative; z-index: 1;">Generative AI for Earth Observation. Data products and change intelligence for resilient decisions.</div>
       </div>
       <div>
         <h4>Company</h4>
