@@ -22,15 +22,25 @@
           <small style="color: var(--muted); font-weight: 600;">Generative Earth Intelligence</small>
         </div>
       </a>
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#cta">Contact</a></li>
-          <li><a href="./contact.html">Contact page</a></li>
-        </ul>
-      </nav>
-      <a class="btn" href="./contact.html">Contact</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="nav-actions">
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#cta">Contact</a></li>
+            <li><a href="./contact.html">Contact page</a></li>
+          </ul>
+        </nav>
+        <a class="btn nav-cta" href="./contact.html">Contact</a>
+      </div>
     </div>
   </header>
 
@@ -114,5 +124,26 @@
     </main>
     <div class="footer-disclaimer">This is a mockup example and not a registered or funcitonal company.</div>
   </footer>
+
+  <script>
+    const nav = document.querySelector('.nav');
+    const toggle = nav?.querySelector('.menu-toggle');
+
+    if (nav && toggle) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      nav.querySelectorAll('nav a').forEach((link) => {
+        link.addEventListener('click', () => {
+          if (nav.classList.contains('open')) {
+            nav.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }
+  </script>
 </body>
 </html>
