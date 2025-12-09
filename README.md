@@ -2,47 +2,57 @@
   <img src="images/hyperalis_labs_workmark_full_cropped.png" height="90">
 </p>
 
-# Hyperalis Lab  
+# Hyperalis Labs  
 Accelerating Applied AI for Earth Observation  
 https://hyperalis.com
 
 ## Executive Summary
-Hyperalis Lab enables organizations to adopt cutting-edge AI for Earth observation without requiring internal research teams. Our mission is to translate the latest scientific advances into robust, operational solutions and help companies integrate modern models, workflows and data products directly into their business processes.
+Hyperalis Labs enables organizations to adopt **the newest state-of-the-art AI for Earth observation** by taking cutting-edge published research and implementing it in a robust, reproducible and trustworthy way. Our mission is to bridge the gap between scientific innovation and real operational value: we identify the strongest recent methods, implement them faithfully, adapt them to client data and workflows, and ensure they perform reliably in production environments.
 
 ## Background and Motivation
-AI-driven Earth observation is advancing quickly, but most organizations do not have the in-house expertise needed to keep pace with current research. Deploying high-performance models, curated workflows and scalable data pipelines requires deep experience in remote sensing, computer vision and open-source ecosystem development. Hyperalis was founded by applied scientists with extensive experience delivering production-grade solutions, large research efforts and open-source tools used by international institutions.
+AI for Earth observation evolves at a pace that most organizations cannot match. New models, architectures and training strategies appear continuously in the research community, yet implementing them requires deep expertise in remote sensing, ML engineering and modern open-source ecosystems.
 
-Hyperalis also maintains dedicated computational infrastructure that allows us to run model training and fine-tuning workflows directly for clients. This includes GPU-accelerated systems suitable for large-scale experiments, rapid prototyping and domain-specific model adaptation.
+Hyperalis was founded by applied scientists who work directly at this research frontier. Our team has led large-scale scientific projects, developed open-source tools widely used by international institutions and deployed production-grade EO AI systems. We combine academic rigor with engineering discipline to deliver solutions that are scientifically credible, reproducible and operationally robust.
+
+To support model development, Hyperalis maintains dedicated GPU infrastructure for training, fine-tuning and large-scale experimentation. Clients benefit from advanced compute capabilities without needing to manage these systems themselves.
 
 ## Value Proposition
-Hyperalis provides direct access to expert-level EO AI capabilities, allowing clients to:
+Hyperalis gives organizations a direct path to **modern, research-derived EO AI capabilities**, including:
 
-- Integrate advanced computer vision and AI analysis on multispectral, SAR and hyperspectral data.
-- Deploy and customize state-of-the-art models for super-resolution, segmentation, detection, change analysis and domain adaptation.
-- Build reproducible and scalable workflows that follow modern open-source best practices.
-- Fine-tune and extend AI systems using client-specific data to maximize operational accuracy, supported by our in-house compute environment.
-- Translate research outcomes into commercial-grade data products and decision-support tools.
+- Implementation of the latest peer-reviewed and preprint SOTA models for multispectral, SAR and hyperspectral data.
+- Fine-tuning and domain adaptation of advanced architectures for super-resolution, segmentation, detection, change analysis and more.
+- Construction of reproducible, trustworthy and transparent workflows aligned with current research methodology.
+- Conversion of scientific prototypes into operational data products, analysis pipelines and decision-support tools.
+- Access to our in-house GPU systems for experimentation and custom model development.
 
 ## Services
-Hyperalis offers structured consultancy solutions.
+Hyperalis offers structured consultancy solutions focused on turning research into operational impact.
 
-### 1. AI EO System Design
-Designing end-to-end workflows for ingestion, preprocessing, model inference and product generation.
+### 1. Research Implementation and System Design
+Identifying high-impact published methods and designing end-to-end EO AI workflows for ingestion, preprocessing, inference and product generation.
 
-### 2. Model Development and Customization
-Tailoring and fine-tuning AI models to domain-specific datasets, sensor characteristics and operational requirements.
+### 2. Model Development, Fine-Tuning and Adaptation
+Customizing and extending modern AI models to match client sensors, domains and operational constraints.
 
-### 3. Workflow Integration
-Embedding AI pipelines into existing geospatial infrastructures, cloud platforms or custom applications.
+### 3. Workflow and Platform Integration
+Embedding advanced AI pipelines into cloud platforms, existing geospatial systems or custom applications.
 
 ### 4. Open-Source Enablement
-Extending and operationalizing open-source components to reduce cost, enhance transparency and accelerate innovation.
+Leveraging and extending open-source ecosystems to reduce cost, ensure transparency and accelerate innovation.
 
-### 5. Training and Upskilling
-Providing targeted technical guidance so teams can maintain and evolve solutions independently.
+### 5. Training, Knowledge Transfer and Technical Guidance
+Supporting internal teams, scientific publications and long-term maintenance of deployed workflows.
 
 ## Impact
-By bridging the gap between research and industry, Hyperalis enables companies to adopt reliable and state-of-the-art EO AI technology that is both scalable and maintainable. Clients gain faster insights, stronger automation capabilities and long-term technological independence.
+Hyperalis ensures that organizations can use **the newest research, implemented correctly and reproducibly**, rather than outdated or simplified models. Clients gain:
+
+- Faster access to cutting-edge capability without needing internal research teams.
+- Higher accuracy and operational value from fine-tuned, domain-adapted models.
+- Workflows that are transparent, reproducible and aligned with scientific best practices.
+- A reliable path from published research to real-world commercial impact.
 
 ## Vision
-Hyperalis aims to serve as a central hub for high-quality and open-source-driven EO AI innovation. The goal is to empower organizations to benefit from advanced analytics and modern AI methods while remaining aligned with the rapid pace of scientific progress.
+Hyperalis aims to be the leading implementer of **newly published state-of-the-art AI for Earth observation**.  
+Our vision is to empower organizations by taking the strongest scientific advances and turning them into trustworthy, high-performance operational workflows that create measurable value.
+
+We monitor the research frontier continuously, select the most relevant advances and deliver implementations that are faithful, reproducible and tailored to client needs.
