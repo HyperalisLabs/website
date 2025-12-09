@@ -2,7 +2,7 @@
   <img src="images/hyperalis_labs_workmark_full_cropped.png" height="90">
 </p>
 
-# Hyperalis Labs  
+# Hyperalis Labs   
 Accelerating Applied AI for Earth Observation  
 https://hyperalis.com
 
