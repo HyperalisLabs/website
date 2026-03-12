@@ -232,6 +232,24 @@ nav ul li a:focus-visible::after {
   transform: scaleX(1);
 }
 
+.nav-mail {
+  width: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0;
+  border: 1px solid var(--border);
+  background: rgba(18, 45, 54, 0.45);
+  color: var(--text);
+}
+
+.nav-mail::after {
+  display: none;
+}
+
+.nav-mail svg {
+  display: block;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
