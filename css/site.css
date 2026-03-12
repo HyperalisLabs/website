@@ -791,6 +791,15 @@ footer h4 {
   font-size: 0.76rem;
 }
 
+.footer-disclaimer a {
+  color: inherit;
+}
+
+.footer-disclaimer a:hover,
+.footer-disclaimer a:focus-visible {
+  color: var(--text);
+}
+
 main > section {
   animation: rise-in 700ms var(--ease) both;
 }
