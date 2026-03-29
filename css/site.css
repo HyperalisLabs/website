@@ -32,7 +32,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
   color: var(--text);
   line-height: 1.65;
@@ -86,7 +86,7 @@ h4,
 .badge,
 .chip,
 .metric .value {
-  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+  font-family: "Trebuchet MS", "Avenir Next", "Arial Narrow", sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -372,6 +372,20 @@ p.lead {
   margin-top: 24px;
 }
 
+.hero-note {
+  margin: 18px 0 0;
+  max-width: 62ch;
+  padding: 14px 16px;
+  border: 1px solid rgba(125, 218, 206, 0.28);
+  border-radius: 14px;
+  background: rgba(16, 38, 47, 0.68);
+  color: var(--muted);
+}
+
+.hero-note strong {
+  color: var(--text);
+}
+
 .badge-row {
   margin-top: 26px;
   display: flex;
@@ -513,6 +527,10 @@ p.lead {
 
 .card p {
   margin-bottom: 0;
+}
+
+.card p + p {
+  margin-top: 12px;
 }
 
 .chip-row {
@@ -740,6 +758,99 @@ p.lead {
   outline: none !important;
   border-color: var(--border-strong) !important;
   box-shadow: 0 0 0 2px rgba(79, 224, 192, 0.14) !important;
+}
+
+.embed-placeholder {
+  display: grid;
+  gap: 8px;
+  min-height: 180px;
+  place-items: center;
+  padding: 22px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.embed-placeholder p {
+  margin: 0;
+}
+
+.embed-placeholder a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-banner {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 260;
+  width: min(92vw, 360px);
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(7, 19, 26, 0.92);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(8px);
+}
+
+.cookie-banner p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.cookie-banner a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-banner-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.cookie-btn {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  min-height: 34px;
+  padding: 0 12px;
+  font: inherit;
+  font-size: 0.77rem;
+  font-weight: 700;
+  color: #082126;
+  background: linear-gradient(135deg, var(--accent), #76e9d3 50%, var(--accent-warm));
+  cursor: pointer;
+}
+
+.cookie-btn.cookie-btn-ghost {
+  color: var(--text);
+  border-color: var(--border);
+  background: rgba(18, 45, 54, 0.5);
+}
+
+.cookie-btn:hover,
+.cookie-btn:focus-visible {
+  filter: brightness(1.04);
+}
+
+.cookie-btn:focus-visible {
+  outline: 2px solid rgba(79, 224, 192, 0.58);
+  outline-offset: 2px;
+}
+
+.intake-note {
+  margin-bottom: 22px;
+}
+
+.intake-note h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.35rem, 1vw + 1rem, 1.6rem);
 }
 
 .wordmark {
@@ -987,6 +1098,12 @@ main > section:nth-of-type(5) {
 
   .meetings-iframe-container {
     min-height: 530px;
+  }
+
+  .cookie-banner {
+    right: 12px;
+    bottom: 12px;
+    width: min(95vw, 360px);
   }
 
   footer .footer-grid {

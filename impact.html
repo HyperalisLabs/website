@@ -4,10 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impact | Hyperalis Labs</title>
+  <meta
+    name="description"
+    content="How Hyperalis Labs evaluates Earth observation AI systems: spatial integrity, uncertainty behavior, operational readiness, and reproducible handover."
+  />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'self'; upgrade-insecure-requests"
+  />
   <link rel="icon" href="./images/favicon-32x32.png" sizes="any" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/site.css" />
 </head>
 <body>
@@ -34,7 +40,7 @@
         <nav aria-label="Main">
           <ul>
             <li><a href="./index.html#top">Overview</a></li>
-            <li><a href="./solutions.html">Solutions</a></li>
+            <li><a href="./index.html#workstreams">Capability Areas</a></li>
             <li><a href="./impact.html" aria-current="page">Impact</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a class="nav-mail" href="mailto:hello@hyperalis.com" aria-label="Send email to hello@hyperalis.com" title="Email"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.6.18L12 12.1l7.4-5.17a.75.75 0 0 0-.4-.13H5a.75.75 0 0 0-.4.13Zm14.9 1.72-7.07 4.95a.75.75 0 0 1-.86 0L4.5 8.65v8.6a.25.25 0 0 0 .25.25h14.5a.25.25 0 0 0 .25-.25v-8.6Z" fill="currentColor"/></svg></a></li>
@@ -47,9 +53,9 @@
   <main id="intro">
     <section class="hero">
       <div>
-        <div class="pill">How we measure value</div>
-        <h1>Operational impact, defined before the first model run.</h1>
-        <p class="lead">We set baselines, track technical and business-facing metrics, and document decisions so new EO AI capability can be trusted by product, operations, and leadership teams.</p>
+        <div class="pill">Measured under real geospatial constraints</div>
+        <h1>We care about alignment, uncertainty, and operational readiness.</h1>
+        <p class="lead">For multimodal EO and canopy-structure systems, useful evaluation starts with spatial integrity and ends with an inference or export path your team can actually run. Generic benchmark talk is not enough.</p>
         <div class="hero-actions">
           <a class="btn" href="./contact.html#contact-form">Share your objectives</a>
         </div>
@@ -58,20 +64,20 @@
         <div class="visual-card">
           <div class="visual-grid">
             <div class="tile">
-              <img src="./images/infrastructure-monitoring.png" alt="Infrastructure and utilities monitoring use case" />
-              <span>Infrastructure and Utilities</span>
+              <img src="./images/validate-img.png" alt="Validation workflow for geospatial AI models" />
+              <span>Validation evidence</span>
             </div>
             <div class="tile">
-              <img src="./images/precision-agriculture.png" alt="Agriculture and forestry monitoring use case" />
-              <span>Agriculture and Forestry</span>
+              <img src="./images/data-fusion.png" alt="Aligned multi-sensor Earth observation data" />
+              <span>Input alignment</span>
             </div>
             <div class="tile">
-              <img src="./images/urban-growth.png" alt="Climate and land monitoring use case" />
-              <span>Climate and Land</span>
+              <img src="./images/evidence-img.png" alt="Reviewable model outputs" />
+              <span>Reviewable outputs</span>
             </div>
             <div class="tile">
-              <img src="./images/synthetic_data.png" alt="Synthetic data generation use case" />
-              <span>Synthetic Data</span>
+              <img src="./images/scale-img.png" alt="Operational deployment of geospatial AI workflows" />
+              <span>Operational fit</span>
             </div>
           </div>
         </div>
@@ -79,56 +85,56 @@
     </section>
 
     <section id="details" class="section">
-      <h2>How impact is evaluated</h2>
-      <p>We avoid inflated claims. At kickoff, we define baseline performance and target deltas, then review outcomes with transparent error analysis and operating constraints.</p>
+      <h2>What we verify before calling a model useful</h2>
+      <p>The evaluation protocol is defined at kickoff and kept explicit. We focus on the failure modes that actually break geospatial systems in practice.</p>
       <div class="grid-3">
         <div class="card">
-          <h3>Decision latency</h3>
-          <p>Track time from new imagery to actionable output in the workflows your team actually uses.</p>
+          <h3>Spatial integrity</h3>
+          <p>Check coordinate-system handling, tiling strategy, pixel alignment, missing coverage, and mask propagation before trusting any headline score.</p>
         </div>
         <div class="card">
-          <h3>Model stability</h3>
-          <p>Measure precision, recall, and drift across regions, seasons, and sensor conditions to understand reliability boundaries.</p>
+          <h3>Generative behavior</h3>
+          <p>Review whether outputs are spatially coherent, diverse enough to reflect uncertainty, and stable under repeated inference instead of collapsing to a single brittle answer.</p>
         </div>
         <div class="card">
-          <h3>Operational cost profile</h3>
-          <p>Monitor compute, storage, and annotation overhead relative to delivered product or operational value.</p>
+          <h3>Operational readiness</h3>
+          <p>Confirm that checkpoints, config snapshots, validation logs, and export scripts are sufficient for reruns, audits, and internal handover.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="section-header">
-        <h2>Sector-specific outcomes</h2>
-        <p>These are typical outcome areas we target when implementing EO AI for early-stage teams building internal capability.</p>
+        <h2>What improvement looks like in practice</h2>
+        <p>These outcomes are generalized from current internal workstreams and describe the kind of technical lift we aim for without exposing NDA-covered project details.</p>
       </div>
       <div class="image-grid">
         <div class="image-card">
-          <img src="./images/infrastructure-monitoring.png" alt="Satellite imagery highlighting infrastructure monitoring" />
+          <img src="./images/data-fusion.png" alt="Multi-sensor data fusion for Earth observation" />
           <div class="image-card-body">
-            <div class="chip">Infrastructure and utilities</div>
-            <p>Detect asset changes earlier and prioritize field review where operational risk is highest.</p>
+            <div class="chip">Multimodal completion</div>
+            <p>Recover missing or lower-quality layers from the sensor mix your team already has, reducing dependence on perfect data availability.</p>
           </div>
         </div>
         <div class="image-card">
-          <img src="./images/super-resolution.png" alt="Comparison of super-resolution results" />
+          <img src="./images/precision-agriculture.png" alt="Forest and land monitoring from optical imagery" />
           <div class="image-card-body">
-            <div class="chip">Climate and resilience</div>
-            <p>Use enhanced imagery quality to improve downstream screening and reduce false positives in alert workflows.</p>
+            <div class="chip">Structure scenarios</div>
+            <p>Generate multiple plausible canopy or related structure rasters from the same optical scene so uncertainty stays visible and reviewable.</p>
           </div>
         </div>
         <div class="image-card">
-          <img src="./images/precision-agriculture.png" alt="Agricultural fields with analytics overlay" />
+          <img src="./images/metrics-img.png" alt="Experiment tracking and model metrics" />
           <div class="image-card-body">
-            <div class="chip">Agriculture and forestry</div>
-            <p>Surface parcel-level variation to guide interventions and reduce manual scouting load.</p>
+            <div class="chip">Reproducible experiments</div>
+            <p>Keep config, checkpoint, and validation evidence tied together so research decisions survive beyond a single exploratory run.</p>
           </div>
         </div>
         <div class="image-card">
-          <img src="./images/data-fusion.png" alt="Overlay of multi-sensor data fusion" />
+          <img src="./images/launch-img.png" alt="Exportable and deployable geospatial AI outputs" />
           <div class="image-card-body">
-            <div class="chip">Land and urban dynamics</div>
-            <p>Track expansion and land-use shifts with consistent update cycles that teams can operationalize.</p>
+            <div class="chip">Deployable outputs</div>
+            <p>Move from notebook-only outputs to named input and output contracts, tiling rules, and exportable artifacts that fit an operational workflow.</p>
           </div>
         </div>
       </div>
@@ -146,7 +152,7 @@
         <h4>Company</h4>
         <div class="list footer-links">
           <a href="./index.html">Overview</a>
-          <a href="./solutions.html">Solutions</a>
+          <a href="./index.html#workstreams">Capability Areas</a>
           <a href="./impact.html">Impact</a>
           <a href="./contact.html">Contact</a>
         </div>
@@ -163,25 +169,6 @@
     <div class="footer-disclaimer">This is a mockup example, not a registered operating company.</div>
   </footer>
 
-  <script>
-    const nav = document.querySelector('.nav');
-    const toggle = nav?.querySelector('.menu-toggle');
-
-    if (nav && toggle) {
-      toggle.addEventListener('click', () => {
-        const isOpen = nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-
-      nav.querySelectorAll('nav a').forEach((link) => {
-        link.addEventListener('click', () => {
-          if (nav.classList.contains('open')) {
-            nav.classList.remove('open');
-            toggle.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-    }
-  </script>
+  <script src="./js/site.js"></script>
 </body>
 </html>
