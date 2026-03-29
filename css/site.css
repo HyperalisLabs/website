@@ -38,6 +38,7 @@ body {
   line-height: 1.65;
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
   overflow-x: clip;
 }
 
@@ -69,6 +70,7 @@ body::after {
 a {
   color: inherit;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 img {
@@ -186,6 +188,10 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+nav ul li {
+  min-width: 0;
 }
 
 nav ul li a {
@@ -327,6 +333,20 @@ main {
   padding: clamp(26px, 3vw, 44px) clamp(16px, 4vw, 28px) 92px;
 }
 
+main > section,
+.hero > *,
+.split > *,
+.grid-3 > *,
+.image-grid > *,
+.visual-grid > *,
+footer .footer-grid > * {
+  min-width: 0;
+}
+
+main[id] > section[id] {
+  scroll-margin-top: 96px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
@@ -404,6 +424,7 @@ p.lead {
   color: var(--muted);
   font-size: 0.83rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .hero-visual {
@@ -551,6 +572,7 @@ p.lead {
   color: #dbfff7;
   font-size: 0.82rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .image-grid {
@@ -709,7 +731,9 @@ p.lead {
 }
 
 .form-card .hs-form-frame,
-.form-card .hs-form-frame * {
+.form-card .hs-form-frame *,
+.meetings-iframe-container iframe,
+.meetings-iframe-container iframe * {
   color: var(--text) !important;
 }
 
@@ -717,6 +741,20 @@ p.lead {
 .form-card iframe {
   width: 100%;
   display: block;
+}
+
+.form-card .hs-form-frame,
+.form-card .hs-form-frame *,
+.form-card iframe,
+.meetings-iframe-container iframe {
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+}
+
+.form-card .hs-form-frame form,
+.form-card .hs-form-frame .hs-form {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .form-card .hs-form-frame input,
@@ -1025,7 +1063,7 @@ main > section:nth-of-type(5) {
   }
 
   .nav.open .nav-actions {
-    max-height: 460px;
+    max-height: 640px;
     opacity: 1;
     transform: translateY(0);
     margin-top: 6px;
@@ -1166,6 +1204,10 @@ main > section:nth-of-type(5) {
     justify-content: center;
   }
 
+  .hero-note {
+    padding: 13px 14px;
+  }
+
   .visual-grid {
     grid-template-columns: 1fr;
   }
@@ -1184,6 +1226,22 @@ main > section:nth-of-type(5) {
 
   .meetings-iframe-container {
     min-height: 500px;
+  }
+
+  .cookie-banner {
+    left: max(12px, env(safe-area-inset-left));
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    width: auto;
+  }
+
+  .cookie-banner-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .cookie-btn {
+    width: 100%;
   }
 
   footer .footer-grid {
