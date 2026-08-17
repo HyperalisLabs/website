@@ -6,12 +6,12 @@
   <title>Contact | Hyperalis Labs</title>
   <meta
     name="description"
-    content="Contact Hyperalis Labs with a high-level Earth observation AI problem statement, sensor mix, and delivery constraints. Confidential data should stay out of the web form."
+    content="Book a meeting with Hyperalis Labs to discuss an Earth observation AI project, or contact us directly by email."
   />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta
     http-equiv="Content-Security-Policy"
-    content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://*.hubspot.com https://*.hsforms.com; img-src 'self' data: https://*.hubspot.com https://*.hubspotusercontent.com https://*.hubspotusercontent-eu1.net https://*.hsforms.com; frame-src https://*.hubspot.com https://*.hsforms.com; script-src 'self' https://static.hsappstatic.net https://js-eu1.hsforms.net; style-src 'self' 'unsafe-inline' https://static.hsappstatic.net https://*.hubspot.com; font-src 'self' data: https://static.hsappstatic.net; connect-src 'self' https://*.hubspot.com https://*.hubapi.com https://*.hsforms.com https://*.hubspotusercontent.com https://*.hubspotusercontent-eu1.net; upgrade-insecure-requests"
+    content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data:; frame-src https://*.hubspot.com; script-src 'self' https://static.hsappstatic.net; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://*.hubspot.com; upgrade-insecure-requests"
   />
   <link rel="icon" href="./images/favicon-32x32.png" sizes="any" type="image/png">
   <link rel="stylesheet" href="./css/site.css" />
@@ -40,6 +40,7 @@
         <nav aria-label="Main">
           <ul>
             <li><a href="./index.html#top">Home</a></li>
+            <li><a href="./impact.html">Approach</a></li>
             <li><a href="./contact.html" aria-current="page">Contact</a></li>
             <li><a class="nav-mail" href="mailto:hello@hyperalis.com" aria-label="Send email to hello@hyperalis.com" title="Email"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.6.18L12 12.1l7.4-5.17a.75.75 0 0 0-.4-.13H5a.75.75 0 0 0-.4.13Zm14.9 1.72-7.07 4.95a.75.75 0 0 1-.86 0L4.5 8.65v8.6a.25.25 0 0 0 .25.25h14.5a.25.25 0 0 0 .25-.25v-8.6Z" fill="currentColor"/></svg></a></li>
           </ul>
@@ -49,45 +50,33 @@
   </header>
 
   <main id="intro">
-    <section class="hero">
+    <section class="hero contact-hero">
       <div>
-        <div class="pill">Start technical scoping</div>
-        <h1>Tell us the target output, sensor stack, and deployment constraint.</h1>
-        <p class="lead">Useful first-contact details include the decision you want to support, expected raster or alert output, sensor inputs, geography scale, latency needs, and whether you need an exploratory study, pilot, or production handover.</p>
-        <p class="hero-note">
-          <strong>Keep the first message high level:</strong> do not send raw imagery, coordinates, customer data, annotations, or NDA-covered benchmark results through the web form.
-        </p>
+        <div class="pill">Contact</div>
+        <h1>Let’s discuss your Earth observation project.</h1>
+        <p class="lead">Choose a time in the calendar below, or email us directly. We can use the first conversation to understand your goal, available data, and the most useful next step.</p>
+        <div class="hero-actions">
+          <a class="btn" href="mailto:hello@hyperalis.com">Email hello@hyperalis.com</a>
+        </div>
       </div>
     </section>
 
-    <section id="contact-form" class="section">
-      <div class="card intake-note">
-        <h2>What to include</h2>
-        <p>Share the target output, available sensors, deployment environment, timeline, and the biggest technical unknown you want resolved first.</p>
-        <p>If the project is sensitive, keep names, locations, and proprietary datasets out of the initial message. We can move detailed discussion into the appropriate channel after first contact.</p>
-      </div>
-
-      <div class="meetings-iframe-container" data-cookie-src="https://meetings-eu1.hubspot.com/simon-donike?embed=true">
+    <section id="book-a-meeting" class="section booking-section">
+      <h2>Book a meeting</h2>
+      <p>Select a convenient time for an initial conversation.</p>
+      <div class="meetings-iframe-container" data-cookie-src="https://meetings-eu1.hubspot.com/simon-donike?embed=true" data-title="Book a meeting with Hyperalis Labs">
         <div class="embed-placeholder" id="meetings-placeholder">
-          <p>Enable cookies to load the booking calendar.</p>
+          <p>Load the calendar to choose a time, or <a href="https://meetings-eu1.hubspot.com/simon-donike" target="_blank" rel="noopener noreferrer">open the booking page</a>.</p>
         </div>
-      </div>
-
-      <div class="form-card">
-        <div class="embed-placeholder" id="form-placeholder">
-          <p>Enable cookies to load the contact form.</p>
-          <p>You can still email us at <a href="mailto:hello@hyperalis.com">hello@hyperalis.com</a>.</p>
-        </div>
-        <div class="hs-form-frame" hidden data-region="eu1" data-form-id="3b52252b-89ec-4daa-9434-6342650b2a6f" data-portal-id="147404340"></div>
       </div>
     </section>
   </main>
 
   <div class="cookie-banner" id="cookie-banner" hidden>
-    <p>This contact page uses HubSpot cookies to load the booking calendar and contact form. <a href="./legal.html">Legal Info</a>.</p>
+    <p>The booking calendar is provided by HubSpot and loads only with your consent. <a href="./legal.html">Legal information</a>.</p>
     <div class="cookie-banner-actions">
-      <button type="button" class="cookie-btn cookie-btn-ghost" data-cookie-action="reject">Only necessary</button>
-      <button type="button" class="cookie-btn" data-cookie-action="accept">Accept</button>
+      <button type="button" class="cookie-btn" data-cookie-action="reject">Continue without calendar</button>
+      <button type="button" class="cookie-btn" data-cookie-action="accept">Load calendar</button>
     </div>
   </div>
 
@@ -102,6 +91,7 @@
         <h4>Company</h4>
         <div class="list footer-links">
           <a href="./index.html">Home</a>
+          <a href="./impact.html">Approach</a>
           <a href="./contact.html">Contact</a>
         </div>
       </div>
@@ -113,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-disclaimer"><a href="./legal.html">Legal Info</a></div>
+    <div class="footer-disclaimer"><a href="./legal.html">Legal information</a></div>
   </footer>
 
   <script src="./js/site.js"></script>
